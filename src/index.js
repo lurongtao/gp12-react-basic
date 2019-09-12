@@ -1,12 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import Style from './pages/07-style/Style'
-import Props from './pages/08-props/Props'
-
-import ClassA from './pages/08-props/ClassA'
+import LifeCyle from './pages/12-lifecycle/LifeCyle'
 
 ReactDOM.render(
-  <Props title={ClassA}></Props>,
+  <LifeCyle></LifeCyle>,
   document.getElementById('root')
 )
+
+// setTimeout(() => {
+//   ReactDOM.unmountComponentAtNode(document.getElementById('root'))
+// }, 5000)
+
+setTimeout(() => {
+  document.getElementById('title').innerHTML = "name"
+}, 10000)
