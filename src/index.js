@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import LifeCyle from './pages/12-lifecycle/LifeCyle'
+import { BrowserRouter as Router } from 'react-router-dom'
+import MyRouter from './pages/13-router/Router'
 
 ReactDOM.render(
-  <LifeCyle></LifeCyle>,
+  <Router>
+    <MyRouter></MyRouter>
+  </Router>,
   document.getElementById('root')
 )
 
@@ -12,6 +15,6 @@ ReactDOM.render(
 //   ReactDOM.unmountComponentAtNode(document.getElementById('root'))
 // }, 5000)
 
-setTimeout(() => {
-  document.getElementById('title').innerHTML = "name"
-}, 10000)
+// setTimeout(() => {
+//   document.getElementById('title').innerHTML = "name"
+// }, 10000)

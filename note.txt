@@ -1,0 +1,9 @@
+2019-09-17
+
+render props: 渲染属性
+- route: render
+- route: children
+- antd/Grid: renderItem
+
+HOC(Higher Order Components): 高阶组件
+- router: withRouter
