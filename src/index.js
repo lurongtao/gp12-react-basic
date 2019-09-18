@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { BrowserRouter as Router } from 'react-router-dom'
-import MyRouter from './pages/13-router/Router'
+import Index from './pages/14-context/demo2/Dart'
 
 ReactDOM.render(
   <Router>
-    <MyRouter></MyRouter>
+    <Index></Index>
   </Router>,
   document.getElementById('root')
 )
