@@ -6,15 +6,17 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './pages/17-react-redux/store'
 
-// import Counter from './pages/17-react-redux/Counter'
+import Counter from './pages/17-react-redux/Counter'
 // import Counter2 from './pages/17-react-redux/Counter2'
 
-import Hoc from './pages/18-HOC/Hoc.jsx'
+// import Hoc from './pages/18-HOC/Hoc.jsx'
+
+// import Enhancer from './pages/19-enhancer/Enhancer'
 
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <Hoc></Hoc>
+      <Counter></Counter>
     </Provider>
   </Router>,
   document.getElementById('root')

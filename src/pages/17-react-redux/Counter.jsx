@@ -8,6 +8,9 @@ const mapStateToProps = (state) => {
   }
 }
 
+@connect( 
+  mapStateToProps
+)
 const mapDispatchToProps = (dispatch) => {
   return {
     increment: () => {
@@ -33,5 +36,5 @@ class Counter extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+export default Counter
 // export default Counter
