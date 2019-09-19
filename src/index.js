@@ -2,11 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { BrowserRouter as Router } from 'react-router-dom'
-import Index from './pages/14-context/demo2/Dart'
+
+import { Provider } from 'react-redux'
+import store from './pages/17-react-redux/store'
+
+// import Counter from './pages/17-react-redux/Counter'
+// import Counter2 from './pages/17-react-redux/Counter2'
+
+import Hoc from './pages/18-HOC/Hoc.jsx'
 
 ReactDOM.render(
   <Router>
-    <Index></Index>
+    <Provider store={store}>
+      <Hoc></Hoc>
+    </Provider>
   </Router>,
   document.getElementById('root')
 )
