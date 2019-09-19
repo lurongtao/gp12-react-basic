@@ -7,7 +7,7 @@ export default (
   switch (action.type) {
     case 'increment':
       return {
-        count: state.count + 1
+        count: state.count + action.data
       }
     case 'decrement': 
       return {

@@ -13,6 +13,8 @@ import Counter from './pages/17-react-redux/Counter'
 
 // import Enhancer from './pages/19-enhancer/Enhancer'
 
+// import Decorators from './pages/20-decorators/Decorators'
+
 ReactDOM.render(
   <Router>
     <Provider store={store}>

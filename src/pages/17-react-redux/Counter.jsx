@@ -1,26 +1,7 @@
 import React, { Component } from 'react'
+import connect from './connect'
 
-import { connect } from 'react-redux'
-
-const mapStateToProps = (state) => {
-  return {
-    count: state.count
-  }
-}
-
-@connect( 
-  mapStateToProps
-)
-const mapDispatchToProps = (dispatch) => {
-  return {
-    increment: () => {
-      dispatch({
-        type: 'increment'
-      })
-    }
-  }
-}
-
+@connect
 class Counter extends Component {
   render() {
     return (
@@ -32,7 +13,7 @@ class Counter extends Component {
   }
 
   componentDidMount() {
-    console.log(this)
+    this.props.increment(9)
   }
 }
 
