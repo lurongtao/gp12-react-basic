@@ -11,7 +11,7 @@ export default (
       }
     case 'decrement': 
       return {
-        count: state.count - 1
+        count: state.count - action.data
       }
     default:
       return state

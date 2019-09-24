@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import { increment, asyncIncrement } from './actionCreator'
+import { increment, decrement, asyncIncrement } from './actionCreator'
 
 const mapStateToProps = (state) => {
   return {
@@ -12,6 +12,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     increment: (data) => {
       dispatch(increment(data))
+    },
+    decrement: (data) => {
+      dispatch(decrement(data))
     }
   }
 }

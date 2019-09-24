@@ -5,6 +5,13 @@ export const increment = (data) => {
   }
 }
 
+export const decrement = (data) => {
+  return {
+    type: 'saga_decrement',
+    data
+  }
+}
+
 export const asyncIncrement = () => {
   return (dispatch) => {
     setTimeout(() => {
