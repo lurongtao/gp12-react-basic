@@ -1,0 +1,30 @@
+.my-node-appear {
+  opacity: 0;
+}
+.my-node-appear-active {
+  opacity: 1;
+  font-size: 90px;
+  transition: all 2s;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.my-node-enter-done {
+  opacity: 1;
+}
+
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.my-node-exit-done {
+  opacity: 0;
+}
